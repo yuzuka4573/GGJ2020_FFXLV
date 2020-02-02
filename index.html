@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit-icons.min.js"></script>
+
+
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
+    <dev class="uk-container">
+      <p class = "uk-text-danger">IMPORTANT THINGS</p>
+      <p class="uk-text-break">This game was made with Unity and develop for PC standalone. If you play this game. Please just use Enter KEY</p>
+      <p class="uk-text-break">If you cannot play this game, reload the page or download a standalone version from <a href="https://ggj.s3.amazonaws.com/games/2020/02/296577/exec/LdAiI/FFXLV.zip">here</a> !
+    </dev>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
